@@ -36,7 +36,7 @@ if not os.path.exists(voc_dataset_dir):
     voc_dataset_file = os.path.join("data", "voc2012_raw.tar")
     if not os.path.exists(voc_dataset_file):
         print("Downloading VOC 2012 dataset...")
-        url = "http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar"
+        url = "http://data.brainchip.com/dataset-mirror/voc/VOCtrainval_11-May-2012.tar"
         urllib.request.urlretrieve(url, voc_dataset_file)
 
     print(f"Extracting {voc_dataset_file}")
